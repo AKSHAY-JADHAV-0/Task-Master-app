@@ -2,9 +2,9 @@ FROM amazoncorretto:17.0.8-alpine3.18
     
 EXPOSE 8080
  
-ENV APP_HOME /src/app
+ENV APP_HOME usr/src/app
 
-COPY target/*.jar $APP_HOME/app.jar
+COPY src/* $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
