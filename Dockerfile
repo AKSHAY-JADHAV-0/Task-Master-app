@@ -4,7 +4,7 @@ EXPOSE 8080
  
 ENV APP_HOME usr/src/app
 
-COPY src/* $APP_HOME/app.jar
+COPY src/* $APP_HOME/
 
 WORKDIR $APP_HOME
 
